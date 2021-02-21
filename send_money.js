@@ -52,14 +52,14 @@ $(document).ready(function () {
     var radioValue = $("input[name='customer']:checked").val();
     if (radioValue) {
       fromCustomer = customerList.customers[radioValue];
-      // alert("Your are a - " + JSON.stringify(fromCustomer));
+     
       return;
     }
     return false;
   });
 
   $("#send-money").click(function () {
-    // alert("=");
+    
     var x = $("#fname").val();
     var y = $("#email").val();
     var z = $("#amount").val();
@@ -72,9 +72,7 @@ $(document).ready(function () {
       $("#to_email").text(y);
       $("#to_amount").text(z);
     }
-    // alert(x);
-    // alert(y);
-    // alert(z);
+    
   });
 
   var navListItems = $("div.setup-panel div a"),
